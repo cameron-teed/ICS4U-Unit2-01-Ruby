@@ -19,10 +19,7 @@ begin
   # Calls methods
   pushed = MrCoxallStack.new
   pushed.push_arr(number_chosen)
-  new_num = pushed.show_stack
-
-  # Prints the number in the
-  puts "Pushed: #{new_num}"
+  pushed.show_stack
 rescue StandardError
   puts 'Error'
 end

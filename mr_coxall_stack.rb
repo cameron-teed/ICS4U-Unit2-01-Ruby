@@ -21,6 +21,7 @@ class MrCoxallStack
 
   # Wasnt sure if i was supposed to add this method but i did
   def show_stack
-    @array_list
+    # Prints the number in the
+    puts "Pushed: #{@array_list}"
   end
 end
