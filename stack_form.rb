@@ -20,6 +20,9 @@ begin
   pushed = MrCoxallStack.new
   pushed.push_arr(number_chosen)
   pushed.show_stack
+  
+  puts "\nDone"
+
 rescue StandardError
   puts 'Error'
 end
