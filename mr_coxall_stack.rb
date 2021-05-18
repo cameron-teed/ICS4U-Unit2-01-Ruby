@@ -1,6 +1,8 @@
 #!/usr/bin/env ruby
 
-# This program uses recursion to find the best outcome for tic tac toe
+##
+# This program pushes a user input to a program with a class containing an
+# arraylist. Then prints out what number you pushed to the stack.
 #
 # @author  Cameron Teed
 # @version 1.0
@@ -19,9 +21,31 @@ class MrCoxallStack
     @array_list.push(push_number)
   end
 
-  # Wasnt sure if i was supposed to add this method but i did
+  # Method that returns the last element in the array
+  def peek_stack
+    @array_list[@array_list.length.to_i - 1]
+  end
+
+  # Method that removes the last element and returns it
+  def pop_stack
+    @array_list.pop
+  end
+
+  # Creates a string with the user inputted number
   def show_stack
-    # Prints the number in the
-    puts "Pushed: #{@array_list}"
+    counter = 0
+    new_string = ''
+    # Loop for the size of the array
+    while counter != @array_list.length.to_i
+      # Adds the elements to the array
+      new_string = if counter != @array_list.length.to_i - 1
+                     "#{new_string}#{@array_list[counter]}, "
+                   else
+                     new_string + @array_list[counter].to_s
+                   end
+      counter += 1
+    end
+    # Returns the new string
+    new_string
   end
 end
