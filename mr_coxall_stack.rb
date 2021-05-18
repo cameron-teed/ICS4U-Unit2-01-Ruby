@@ -2,7 +2,7 @@
 
 ##
 # This program pushes a user input to a program with a class containing an
-# arraylist. Then prints out what number you pushed to the stack.
+# arraylist. Then pops and peeks it.
 #
 # @author  Cameron Teed
 # @version 1.0
